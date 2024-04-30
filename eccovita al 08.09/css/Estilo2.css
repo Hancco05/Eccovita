@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.fondo{
+    background-image: url('imagenes/fondo.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; */
+}
+header{
+    width: 100%;
+    background: rgb(17, 197, 17);
+    height: 85px;
+    z-index: 10;
+}
+.ancho{
+    width: 80%;
+    height: 85px;
+    background: rgb(17, 197, 17);
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 85px;
+    background: rgb(17, 197, 17);
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+} 
+/* letra de portada */
+.logo p a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: rale;
+}
+
+/* parte de la busqueda */
+nav{
+    width: 70%;
+    height: 70px;
+    background: olrgb(17, 197, 17)ive;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: rale;
+}
+nav ul li a:hover{
+    color: #444;
+}
+.letras-slinder p{
+    color: #fff;
+    /* 29 */
+    font-size: 25px;
+    font-family: rale;
+    /* top: 1px; */
+}
+
+@font-face{
+    font-family: rale;
+    src: url(fuente/Raleway-Regular.ttf)
+}
+.ancho-letras{
+    /* 145 */
+    padding-top: 100px;
+    position: absolute;
+    /* 100 */
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    z-index: 1;
+}
+.letras-slinder{
+    width: 100%;
+    margin: auto;
+}
+.contenedor-imagen{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+.contenedor-imagen .columnasx2{
+    /* 32 */
+    width: 32%;
+    position: relative;
+    /* 250 */
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.8)
+}
+.columnasx2 img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; si se quiere anchar la imagen*/
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(86, 72, 214);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.overlay h4{
+    color: #fff;
+    /* 300 */
+    /* font-weight: 300;
+    font-size: 30px; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;  */
+    text-align: center;
+    /* transform: translate(50%, 50%); */
+}
+.columnasx2:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}

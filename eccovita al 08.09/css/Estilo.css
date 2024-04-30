@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    background: rgb(17, 197, 17);
+    height: 85px;
+    z-index: 10;
+}
+.ancho{
+    width: 80%;
+    height: 85px;
+    background: rgb(17, 197, 17);
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 85px;
+    background: rgb(17, 197, 17);
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+} 
+/* leta de portada */
+.logo p a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: rale;
+}
+/* parte de la busqueda */
+nav{
+    width: 70%;
+    height: 70px;
+    background: olrgb(17, 197, 17)ive;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: rale;
+}
+nav ul li a:hover{
+    color: #444;
+}
+@font-face{
+    font-family: rale;
+    src: url(fuente/Raleway-Regular.ttf)
+}
+
+imagenes{
+    width: 700px;
+}
+
+#contenedor{
+    /* 700px */
+    width: 1348px;
+    height: 350px; 
+    /* 350px */
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#contenedor ul{
+    list-style: none;
+    width: 1920px;
+    display: flex;
+    animation: slide 20s infinite alternate;
+
+}
+@keyframes slide {
+
+    0% {margin-left: 0px;}
+    20% {margin-left: 0px;}
+/* 700 */
+    25% {margin-left: -500px;}
+    45% {margin-left: -500px;}
+/* 1400 */
+    50% {margin-left: -1450px;}
+    65% {margin-left: -1450px;} 
+/* 2100 */
+    75% {margin-left: -2200px;}
+    87% {margin-left: -2200px;}
+    87% {margin-left: -2500px;}
+    100% {margin-left: -2500px;}
+}
+
+.ancho-letras{
+    padding-top: 100px;
+    top: 475px;
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    z-index: 1;
+}
+.letras-slindee{
+    width: 80%;
+    margin: auto;
+}
+.letras-slindee h1{
+    color: #fff;
+    font-family: rale;
+    font-size: 60px;
+}
+.letras-slindee p{
+    color: #fff;
+    /* 25 */
+    font-size: 25px;
+    font-family: rale;
+    padding-top: 50px;
+}
+/* las secciones de la pagina */
+h2{
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 20px;
+    font-weight: normal;
+}
+h4{
+    margin-top: 15px;
+    font-size: 16px;
+    
+}
+p{
+    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.titul{
+    width: 90%;
+    margin: auto;
+}
+.bienvenidos{
+    margin-top: 50px
+}
+.contenedor-columnas{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.columnasx1{
+    width: 33.333%;
+    float: left;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.columnasx1 img{
+    width: 100%;
+}
+.banner-1{
+    width: 100%;
+    background: #1abc9c;
+    clear: both;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.banner-1:hover{
+    background: #444;
+    transition: 0.4s;
+}
+.banner-1 h3{
+    color: #fff;
+    font-size: 32px;
+}
+.banner-1 a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}

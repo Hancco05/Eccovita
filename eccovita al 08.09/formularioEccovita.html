@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style_form.css">
+        <link rel="stylesheet" href="css/style_scroll.css">
+        <title>Formulario</title>
+        <script type="text/javascript" src="js/backtotop.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.js"></script> 
+        <script type="text/javascript" src="js/validar.js"></script>
+    </head>
+
+    <header>
+        <div class="ancho">
+            <div class="logo"> 
+            <p><a href="formularioEccovita.html">Eccovita</a></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Proyecto EccoVita.html">Servicio</a></li>
+                    <li><a href="formularioEccovita.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>	
+
+	<body>
+        <h1>Contáctanos</h1>
+		<form name="datos" action="" method="post" class="form-register" onsubmit="return validarForm()">
+            <h2 class="form-titulo">Ingresa tus datos</h2>
+            <div class="contenedor-inputs">
+            <input action="" type="text" id="nombre" name="nombre" placeholder="Nombre Completo" class="input-100" required>
+            <label for="" class="labeltext">Nombre Completo</label>
+            <input action="" type="text" id="direccion" name="direccion" placeholder="Dirección (opcional)" class="input-100">
+            <label for="" class="labeltext">Dirección (opcional)</label>
+            <input action="" type="text" id="telefono" name="Telefono" placeholder="Teléfono" class="input-48">
+            <label for="" class="labeltext">Teléfono</label>
+            <input action="" type="email" id="correo"  name="correo" placeholder="Correo Electrónico" class="input-48-2"required>
+            <label for="" class="labelmail">Correo Electrónico</label>
+            <input action="" type="text" id="asunto" name="asunto" placeholder="Asunto" class="input-100"required>
+            <label for="" class="labeltext">Asunto</label>
+            <textarea action="" name="texto" id="mensaje" rows="5" cols="20" placeholder="Mensaje" class="input-1" required></textarea>
+            <label for="" class="labelmessage">Mensaje</label>
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="labelcheck">Desea recibir mayor información</label>
+            </div><br><br>
+            <input type="submit" value="Enviar" class="btnEnviar" onClick="validarForm()">
+            <input type="reset" value="Limpiar" class="btnBorrar">          
+            <div id="content"></div>
+            <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        </form> 
+        <script type="text/javascript" src="js/labform.js"></script>			
+	</body>
+</html>

@@ -1,0 +1,247 @@
+
+/* Dando formato al formulario */
+* {
+    box-sizing: border-box;
+}
+/* Imagen de fondo y ajustando en todos los costados */
+body {
+    background: url(../imagenes/ima.jpg) no-repeat 0px 0px;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* titulo */
+h1 {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+/* Recuadro del formulario */
+.form-register {
+    width: 98%;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3)
+}
+/* Titulo del formulario y separación */
+.form-titulo {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid rgb(183, 220, 20);
+}
+
+.contenedor-inputs, .labeltext{
+    display: block;
+}
+/* contenedores del formulario */
+.contenedor-inputs {
+    padding: 10px 30px;
+    display: block;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.contenedor-inputs :focus{
+    outline: 2px solid rgb(17, 197, 17);
+}
+
+.contenedor-inputs :focus + .labeltext{
+    margin-top: -105px;
+}
+.contenedor-inputs :focus + .labelmail{
+    margin-top: -25px;
+}
+.contenedor-inputs :focus + .labelmessage{
+    margin-top: -162px;
+}
+/* Ajuste de contenedores al 48% */
+.input-48 {
+    width: 48%;
+}
+.input-48-2 {
+    width: 49%;
+    margin-left: 6px;
+}
+/* Ajuste de contenedores al 100% */
+.input-100 {
+    width: 100%;
+}
+
+.labeltext{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -65px;
+    color: white;
+    transition: all 0.2s;
+    margin-bottom: 15px;
+    z-index: -10;
+}
+
+.labelmail{
+    padding-left: 15px;
+    position: absolute;
+    margin-left: -360px;
+    margin-top: -70px;
+    color: white;
+    transition: all 0.2s;
+    margin-bottom: 15px;
+    z-index: -5;
+}
+
+.labelmessage{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -125px;
+    color: white;
+    transition: all 0.2s;
+    margin-bottom: 15px;
+    z-index: -20;
+}
+
+.fijar{
+    margin-top: -105px;
+}
+.fijarmail{
+    margin-top: -25px;
+}
+.fijarmessage{
+    margin-top: -162px;
+}
+
+/* Formato al Label del Checkbox */
+.labelcheck {
+    border-block-start-width: 100px;
+    margin: auto;
+    font-size: 12px;
+    text-align: justify;
+    left: 0;
+    position: relative;
+    font-family: sans-serif;
+    top: 0 60px;
+    width: 100px; 
+}
+/* Ajuste del textArea, minimo y lo que puede alcanzar(textarea, input-1) */
+textarea{
+    min-height: 100px;
+    max-height: 400px;
+}
+
+.input-1 {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-family: sans-serif;
+}
+/* Formato del Checkbox */
+input {
+    margin-bottom: 30px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid gray;
+
+}
+/* Formato del boton enviar */
+.btnEnviar {
+    background: crimson;
+    color: white;
+    margin-left: 300px;
+    padding: 10px 30px 10px 30px;
+    border-color: black;
+    cursor: pointer;
+}
+/* El boton enviar cambia de color al presionarlo */
+.btnEnviar:active {
+    transform: scale(1.05);
+}
+/* Formato del boton Limpiar */
+.btnBorrar {
+    background: white;
+    color: gray;
+    margin-left: 60px;
+    padding: 10px 30px 10px 30px;
+    border-color: black;
+    cursor: pointer;
+}
+/* El boton limpiar cambia de color al presionarlo */
+.btnBorrar :active {
+    transform: scale(1.05);
+}
+/* Responsive */
+@media (max-width: 600px){
+    .contenedor-inputs{
+        width: 90%;
+    }
+}
+/* Agregando un tipo de fuente */
+@font-face{
+    font-family: rale;
+    src: url(Raleway.ttf);
+}
+/* Formato menu */
+header{
+    width: 100%;
+    background: rgb(17, 197, 17);
+    height: 90px;
+    z-index: 10;
+}
+.ancho{
+    width: 80%;
+    height: 00px;
+    background: rgb(17, 197, 17);
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    background: rgb(17, 197, 17);
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+} 
+
+.logo p a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: rale;
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    background: olrgb(17, 197, 17)ive;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: rale;
+}
+nav ul li a:hover{
+    color: #444;
+}

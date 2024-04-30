@@ -1,0 +1,21 @@
+@media only screen and (max-width: 480px){
+  .ancho{
+      width: 100%;
+  }
+  #contenedor{
+      width: 700%;
+  }
+  #contenedor ul{
+      width: 70%;
+  }
+  .letras-slinder{
+      width: 100%;
+  }
+  .columnasx1{
+      width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+}
